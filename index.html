@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>✨ Тайный ангел · Танцуй, Кристина ✨</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Marck+Script&family=Poiret+One&family=Neucha&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Marck+Script&family=Neucha&family=Poiret+One&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -16,7 +14,7 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(circle at 20% 30%, #2d1b3a, #0b0715 85%);
+      background: radial-gradient(circle at 25% 30%, #1e1a2f, #0b0815 85%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -26,7 +24,7 @@
       padding: 20px;
     }
 
-    /* звёздный мерцающий фон */
+    /* звёзды */
     .stars {
       position: fixed;
       top: 0;
@@ -41,31 +39,30 @@
       position: absolute;
       background: white;
       border-radius: 50%;
-      box-shadow: 0 0 20px 4px #ffe9b0;
-      animation: twinkle 3.5s infinite alternate ease-in-out;
+      box-shadow: 0 0 18px 3px #c8b8ff;
+      animation: twinkle 3.2s infinite alternate ease-in-out;
     }
 
     @keyframes twinkle {
-      0% { opacity: 0.2; transform: scale(0.7); }
-      100% { opacity: 1; transform: scale(1.4); }
+      0% { opacity: 0.25; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1.3); }
     }
 
-    /* основной контейнер */
     .card {
       position: relative;
       z-index: 10;
-      max-width: 800px;
+      max-width: 750px;
       width: 100%;
-      background: rgba(20, 10, 35, 0.4);
-      backdrop-filter: blur(22px);
-      -webkit-backdrop-filter: blur(22px);
-      border: 2px solid rgba(255, 200, 220, 0.55);
-      border-radius: 100px 30px 100px 30px;
-      padding: 45px 30px;
-      box-shadow: 0 35px 60px rgba(0,0,0,0.8), 0 0 90px rgba(255, 140, 200, 0.5);
+      background: rgba(18, 14, 32, 0.55);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 2px solid rgba(180, 160, 255, 0.5);
+      border-radius: 90px 25px 90px 25px;
+      padding: 40px 25px;
+      box-shadow: 0 30px 55px rgba(0,0,0,0.8), 0 0 80px rgba(140, 120, 255, 0.45);
       text-align: center;
-      color: #fff5f0;
-      animation: floatCard 6s infinite ease-in-out;
+      color: #eae2ff;
+      animation: floatCard 5.5s infinite ease-in-out;
     }
 
     @keyframes floatCard {
@@ -78,9 +75,9 @@
       content: "";
       position: absolute;
       inset: -6px;
-      border-radius: 105px 35px 105px 35px;
+      border-radius: 95px 30px 95px 30px;
       padding: 3px;
-      background: linear-gradient(45deg, #f9a8d4, #f472b6, #c084fc, #f9a8d4);
+      background: linear-gradient(45deg, #b794f4, #63b3ed, #b794f4);
       background-size: 300% 300%;
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -98,44 +95,44 @@
 
     h1 {
       font-family: 'Marck Script', cursive;
-      font-size: 4.5rem;
+      font-size: 4.2rem;
       font-weight: 700;
-      background: linear-gradient(180deg, #ffe6a6, #ffb7b2);
+      background: linear-gradient(180deg, #d4c5f9, #a5b4fc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      filter: drop-shadow(0 0 30px #ff99cc);
-      margin-bottom: 15px;
+      filter: drop-shadow(0 0 28px #818cf8);
+      margin-bottom: 8px;
       letter-spacing: 3px;
-      animation: titleGlow 2.5s infinite alternate;
+      animation: titleGlow 2.8s infinite alternate;
     }
 
     @keyframes titleGlow {
-      0% { text-shadow: 0 0 25px #ff80bf, 0 0 45px #d080ff; }
-      100% { text-shadow: 0 0 50px #ffb3d9, 0 0 75px #c084fc; }
+      0% { text-shadow: 0 0 22px #7f9cf5, 0 0 40px #a78bfa; }
+      100% { text-shadow: 0 0 45px #93c5fd, 0 0 70px #c4b5fd; }
     }
 
     .subtitle {
-      font-size: 2rem;
-      color: #fdd5e6;
-      background: rgba(50, 20, 60, 0.5);
+      font-size: 1.9rem;
+      color: #cdd6f4;
+      background: rgba(45, 35, 70, 0.55);
       display: inline-block;
-      padding: 8px 35px;
+      padding: 8px 38px;
       border-radius: 50px;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       letter-spacing: 2px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(6px);
       font-weight: 600;
-      border: 1px dashed #ffb6d1;
+      border: 1px dashed #a5b4fc;
     }
 
-    /* КРОССВОРД "ТАНЦУЙ" */
+    /* кроссворд */
     .crossword {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 28px;
-      margin: 25px 0 30px;
+      margin: 20px 0 25px;
     }
 
     .word-row {
@@ -143,96 +140,126 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      gap: 25px 35px;
+      gap: 30px 40px;
     }
 
     .letter-block {
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: transform 0.3s ease;
+      perspective: 800px;
     }
 
-    .big-letter {
+    /* кнопка-буква с 3D переворотом */
+    .flip-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      height: 110px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .flip-btn.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .front, .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 28px;
       font-family: 'Marck Script', 'Caveat', cursive;
-      font-size: 5.5rem;
       font-weight: 700;
-      background: linear-gradient(135deg, #ffd966, #ff8c8c, #d08cff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      filter: drop-shadow(0 0 25px #ff80bf);
-      line-height: 1;
-      animation: letterJump 2.8s infinite ease-in-out;
-      cursor: default;
     }
 
-    /* разная задержка для букв */
-    .letter-block:nth-child(1) .big-letter { animation-delay: 0s; }
-    .letter-block:nth-child(2) .big-letter { animation-delay: 0.2s; }
-    .letter-block:nth-child(3) .big-letter { animation-delay: 0.4s; }
-    .letter-block:nth-child(4) .big-letter { animation-delay: 0.6s; }
-    .letter-block:nth-child(5) .big-letter { animation-delay: 0.8s; }
-    .letter-block:nth-child(6) .big-letter { animation-delay: 1.0s; }
-
-    @keyframes letterJump {
-      0% { transform: translateY(0px) scale(1); }
-      30% { transform: translateY(-18px) scale(1.1); }
-      60% { transform: translateY(0px) scale(0.95); }
-      100% { transform: translateY(0px) scale(1); }
+    .front {
+      background: linear-gradient(145deg, #2d234a, #1a1530);
+      border: 2px solid #8b9cf7;
+      box-shadow: 0 0 28px #6d6ef555;
+      color: #e0d7ff;
+      font-size: 5.5rem;
+      text-shadow: 0 0 18px #b1a8ff;
     }
 
-    .small-word {
+    .back {
+      background: linear-gradient(145deg, #312e5c, #1e1a38);
+      border: 2px solid #b7a6ff;
+      box-shadow: 0 0 32px #a78bfa;
+      color: #f5e9ff;
+      font-size: 2.3rem;
       font-family: 'Neucha', 'Caveat', cursive;
-      font-size: 2rem;
-      font-weight: 600;
-      color: #fde2c4;
-      background: rgba(138, 43, 95, 0.5);
-      padding: 6px 18px;
-      border-radius: 35px;
-      backdrop-filter: blur(4px);
-      margin-top: 6px;
-      box-shadow: 0 0 18px #ff99cc55;
-      letter-spacing: 1.5px;
-      border: 1px solid #ffb6d1;
-      animation: wordPulse 2.2s infinite alternate;
+      transform: rotateY(180deg);
+      padding: 8px;
+      text-align: center;
+      line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    @keyframes wordPulse {
-      0% { background: rgba(138, 43, 95, 0.4); }
-      100% { background: rgba(170, 70, 120, 0.6); }
+    .small-word-static {
+      font-family: 'Neucha', 'Caveat', cursive;
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: #cfc4f0;
+      background: rgba(70, 55, 110, 0.55);
+      padding: 6px 20px;
+      border-radius: 30px;
+      backdrop-filter: blur(5px);
+      margin-top: 8px;
+      box-shadow: 0 0 20px #7f8bf755;
+      letter-spacing: 1.5px;
+      border: 1px solid #a78bfa;
     }
 
     .angel-message {
-      font-size: 2.2rem;
-      margin: 20px 0 10px;
-      color: #ffdab9;
+      font-size: 2.1rem;
+      margin: 25px 0 10px;
+      color: #ddd0ff;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background: rgba(255,255,245,0.08);
-      border-radius: 40px;
-      padding: 12px 25px;
+      background: rgba(255,255,250,0.06);
+      border-radius: 45px;
+      padding: 12px 30px;
     }
 
     .footer-note {
-      margin-top: 25px;
-      font-size: 2.1rem;
-      color: #eac4ff;
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #b9adff;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 18px;
       flex-wrap: wrap;
     }
 
-    /* падающие снежинки/блёстки */
+    .reset-hint {
+      margin-top: 18px;
+      font-size: 1.5rem;
+      color: #9c94d0;
+      opacity: 0.8;
+    }
+
+    /* падающие элементы */
     .snowflake {
       position: fixed;
       top: -50px;
       color: #fff;
       font-size: 2rem;
-      text-shadow: 0 0 20px #ff99cc, 0 0 35px #b57bee;
+      text-shadow: 0 0 18px #b49cff, 0 0 30px #6d8ae7;
       animation: fall linear infinite;
       z-index: 5;
       pointer-events: none;
@@ -246,11 +273,15 @@
     }
 
     @media (max-width: 550px) {
-      .big-letter {
-        font-size: 3.8rem;
+      .flip-btn {
+        width: 75px;
+        height: 85px;
       }
-      .small-word {
-        font-size: 1.5rem;
+      .front {
+        font-size: 4rem;
+      }
+      .back {
+        font-size: 1.8rem;
       }
     }
   </style>
@@ -263,103 +294,138 @@
     <h1>Кристина</h1>
     <div class="subtitle">🪽 Тайный ангел 🪽</div>
 
-    <!-- Кроссворд: Т А Н Ц У Й -->
+    <!-- кроссворд ТАНЦУЙ с кнопками -->
     <div class="crossword">
       <div class="word-row">
         <!-- Т -> Тепло -->
         <div class="letter-block">
-          <span class="big-letter">Т</span>
-          <span class="small-word">Тепло</span>
+          <button class="flip-btn" data-word="Тепло">
+            <span class="front">Т</span>
+            <span class="back">🔥<br>Тепло</span>
+          </button>
+          <span class="small-word-static">Тепло</span>
         </div>
         <!-- А -> Ангел -->
         <div class="letter-block">
-          <span class="big-letter">А</span>
-          <span class="small-word">Ангел</span>
+          <button class="flip-btn" data-word="Ангел">
+            <span class="front">А</span>
+            <span class="back">🪽<br>Ангел</span>
+          </button>
+          <span class="small-word-static">Ангел</span>
         </div>
         <!-- Н -> Нежность -->
         <div class="letter-block">
-          <span class="big-letter">Н</span>
-          <span class="small-word">Нежность</span>
+          <button class="flip-btn" data-word="Нежность">
+            <span class="front">Н</span>
+            <span class="back">🌸<br>Нежность</span>
+          </button>
+          <span class="small-word-static">Нежность</span>
         </div>
       </div>
       <div class="word-row">
         <!-- Ц -> Цветы -->
         <div class="letter-block">
-          <span class="big-letter">Ц</span>
-          <span class="small-word">Цветы</span>
+          <button class="flip-btn" data-word="Цветы">
+            <span class="front">Ц</span>
+            <span class="back">💐<br>Цветы</span>
+          </button>
+          <span class="small-word-static">Цветы</span>
         </div>
         <!-- У -> Улыбка -->
         <div class="letter-block">
-          <span class="big-letter">У</span>
-          <span class="small-word">Улыбка</span>
+          <button class="flip-btn" data-word="Улыбка">
+            <span class="front">У</span>
+            <span class="back">😊<br>Улыбка</span>
+          </button>
+          <span class="small-word-static">Улыбка</span>
         </div>
-        <!-- Й -> Йогурт? нет, лучше Йети (добрый) или Йота (капля счастья). Сделаем Йота радости -->
+        <!-- Й -> Йота радости -->
         <div class="letter-block">
-          <span class="big-letter">Й</span>
-          <span class="small-word">Йота✨</span>
+          <button class="flip-btn" data-word="Йота✨">
+            <span class="front">Й</span>
+            <span class="back">✨<br>Йота</span>
+          </button>
+          <span class="small-word-static">Йота✨</span>
         </div>
       </div>
     </div>
 
     <div class="angel-message">
-      <span>🎀</span> Танцуй, мечтай, сияй! <span>🎀</span>
+      <span>🌙</span> Танцуй, мечтай, сияй! <span>🌙</span>
     </div>
 
     <div class="footer-note">
       <span>❄️ Твой тайный ангел</span>
       <span>🌟</span>
     </div>
+    <div class="reset-hint">(нажми на буквы — они перевернутся)</div>
   </div>
 
   <script>
     (function() {
       // звёзды
       const starsContainer = document.getElementById('starsContainer');
-      for (let i = 0; i < 120; i++) {
+      for (let i = 0; i < 110; i++) {
         const star = document.createElement('div');
         star.className = 'star';
-        const size = Math.random() * 6 + 2;
+        const size = Math.random() * 5 + 2;
         star.style.width = size + 'px';
         star.style.height = size + 'px';
         star.style.left = Math.random() * 100 + '%';
         star.style.top = Math.random() * 100 + '%';
-        star.style.animationDelay = Math.random() * 5 + 's';
-        star.style.animationDuration = 2.2 + Math.random() * 5 + 's';
-        const colors = ['#fffde7', '#ffe0f0', '#f8d5ff', '#ffccf9', '#d4c5f9'];
+        star.style.animationDelay = Math.random() * 4 + 's';
+        star.style.animationDuration = 2 + Math.random() * 5 + 's';
+        const colors = ['#e9e2ff', '#d4ccff', '#c7d2fe', '#b9c8ff', '#ddd6fe'];
         star.style.background = colors[Math.floor(Math.random() * colors.length)];
-        star.style.boxShadow = `0 0 ${Math.random()*22+6}px ${colors[Math.floor(Math.random()*colors.length)]}`;
+        star.style.boxShadow = `0 0 ${Math.random()*20+5}px ${colors[Math.floor(Math.random()*colors.length)]}`;
         starsContainer.appendChild(star);
       }
 
       // падающие элементы
       const snowflakesContainer = document.getElementById('snowflakesContainer');
-      const emojis = ['❄️', '🪽', '✨', '💖', '🌟', '🎀', '🕊️', '💫', '🧚', '🌸', '⭐', '🔮'];
+      const emojis = ['❄️', '✨', '🌙', '💫', '🕊️', '⭐', '🔮', '🧩', '☁️', '💠', '🪄', '🌠'];
 
       function createSnowflake() {
         const flake = document.createElement('div');
         flake.className = 'snowflake';
         flake.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
         flake.style.left = Math.random() * 100 + '%';
-        flake.style.fontSize = (Math.random() * 28 + 18) + 'px';
+        flake.style.fontSize = (Math.random() * 26 + 16) + 'px';
         flake.style.animationDuration = Math.random() * 7 + 7 + 's';
-        flake.style.opacity = Math.random() * 0.9 + 0.3;
+        flake.style.opacity = Math.random() * 0.85 + 0.3;
         snowflakesContainer.appendChild(flake);
         setTimeout(() => {
           if (flake && flake.parentNode) flake.remove();
-        }, 15000);
+        }, 14000);
       }
 
-      setInterval(createSnowflake, 380);
-      for (let i = 0; i < 14; i++) {
-        setTimeout(createSnowflake, i * 180);
+      setInterval(createSnowflake, 420);
+      for (let i = 0; i < 12; i++) {
+        setTimeout(createSnowflake, i * 170);
       }
 
-      // лёгкий параллакс
+      // ---- логика переворота кнопок ----
+      const flipButtons = document.querySelectorAll('.flip-btn');
+      flipButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          // переключаем класс flipped
+          this.classList.toggle('flipped');
+          
+          // небольшой дополнительный эффект: меняем тень на время
+          if (this.classList.contains('flipped')) {
+            this.style.filter = 'drop-shadow(0 0 20px #b794f4)';
+          } else {
+            this.style.filter = 'none';
+          }
+        });
+      });
+
+      // лёгкий параллакс карточки
       document.addEventListener('mousemove', (e) => {
         const card = document.querySelector('.card');
         if (!card) return;
-        const x = (window.innerWidth/2 - e.clientX) / 50;
-        const y = (window.innerHeight/2 - e.clientY) / 50;
+        const x = (window.innerWidth/2 - e.clientX) / 45;
+        const y = (window.innerHeight/2 - e.clientY) / 45;
         card.style.transform = `translateY(-6px) rotateY(${x}deg) rotateX(${y}deg)`;
       });
       document.addEventListener('mouseleave', () => {
