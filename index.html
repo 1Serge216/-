@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>✨ Тайный ангел для Кристины ✨</title>
-  <!-- Подключаем шрифт для сказочного настроения -->
+  <title>✨ Тайный ангел · Танцуй, Кристина ✨</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Marck+Script&family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Marck+Script&family=Poiret+One&family=Neucha&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -17,17 +16,17 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(circle at 30% 20%, #1a0c2c, #0b0710 80%);
+      background: radial-gradient(circle at 20% 30%, #2d1b3a, #0b0715 85%);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Caveat', cursive, sans-serif;
+      font-family: 'Neucha', 'Caveat', cursive, sans-serif;
       overflow-x: hidden;
       position: relative;
       padding: 20px;
     }
 
-    /* Звёздный фон с анимацией мерцания */
+    /* звёздный мерцающий фон */
     .stars {
       position: fixed;
       top: 0;
@@ -42,54 +41,52 @@
       position: absolute;
       background: white;
       border-radius: 50%;
-      box-shadow: 0 0 15px 3px rgba(255, 255, 200, 0.9);
-      animation: twinkle 3s infinite alternate ease-in-out;
+      box-shadow: 0 0 20px 4px #ffe9b0;
+      animation: twinkle 3.5s infinite alternate ease-in-out;
     }
 
     @keyframes twinkle {
-      0% { opacity: 0.3; transform: scale(0.8); }
-      100% { opacity: 1; transform: scale(1.2); }
+      0% { opacity: 0.2; transform: scale(0.7); }
+      100% { opacity: 1; transform: scale(1.4); }
     }
 
-    /* Главная карточка-поздравление */
+    /* основной контейнер */
     .card {
       position: relative;
       z-index: 10;
-      max-width: 700px;
+      max-width: 800px;
       width: 100%;
-      background: rgba(255, 248, 240, 0.1);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border: 2px solid rgba(255, 215, 150, 0.5);
-      border-radius: 80px 20px 80px 20px;
-      padding: 50px 35px;
-      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7), 0 0 80px rgba(255, 180, 80, 0.4);
+      background: rgba(20, 10, 35, 0.4);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 2px solid rgba(255, 200, 220, 0.55);
+      border-radius: 100px 30px 100px 30px;
+      padding: 45px 30px;
+      box-shadow: 0 35px 60px rgba(0,0,0,0.8), 0 0 90px rgba(255, 140, 200, 0.5);
       text-align: center;
-      color: #fff3e0;
-      animation: floatCard 5s infinite ease-in-out;
-      transition: all 0.3s;
+      color: #fff5f0;
+      animation: floatCard 6s infinite ease-in-out;
     }
 
     @keyframes floatCard {
       0% { transform: translateY(0px); }
-      50% { transform: translateY(-12px); }
+      50% { transform: translateY(-10px); }
       100% { transform: translateY(0px); }
     }
 
-    /* Свечение по контуру */
     .card::before {
       content: "";
       position: absolute;
-      inset: -5px;
-      border-radius: 85px 25px 85px 25px;
+      inset: -6px;
+      border-radius: 105px 35px 105px 35px;
       padding: 3px;
-      background: linear-gradient(45deg, #ffb347, #ff6b9d, #c44dff, #ffb347);
+      background: linear-gradient(45deg, #f9a8d4, #f472b6, #c084fc, #f9a8d4);
       background-size: 300% 300%;
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
-      animation: borderGlow 4s linear infinite;
+      animation: borderGlow 5s linear infinite;
       z-index: -1;
     }
 
@@ -101,104 +98,141 @@
 
     h1 {
       font-family: 'Marck Script', cursive;
-      font-size: 4.2rem;
+      font-size: 4.5rem;
       font-weight: 700;
-      background: linear-gradient(to right, #fdd835, #ffb74d, #ff8a65);
+      background: linear-gradient(180deg, #ffe6a6, #ffb7b2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      filter: drop-shadow(0 0 25px #ff9933);
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-      animation: titlePulse 2s infinite;
+      filter: drop-shadow(0 0 30px #ff99cc);
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+      animation: titleGlow 2.5s infinite alternate;
     }
 
-    @keyframes titlePulse {
-      0% { text-shadow: 0 0 25px #ff9933, 0 0 40px #ff7700; }
-      50% { text-shadow: 0 0 45px #ffb703, 0 0 70px #ff5500; }
-      100% { text-shadow: 0 0 25px #ff9933, 0 0 40px #ff7700; }
+    @keyframes titleGlow {
+      0% { text-shadow: 0 0 25px #ff80bf, 0 0 45px #d080ff; }
+      100% { text-shadow: 0 0 50px #ffb3d9, 0 0 75px #c084fc; }
     }
 
-    .angel-icon {
-      font-size: 4rem;
-      filter: drop-shadow(0 0 20px gold);
-      margin: 10px 0;
-      animation: swing 2s infinite alternate ease-in-out;
-      display: inline-block;
-    }
-
-    @keyframes swing {
-      0% { transform: rotate(-8deg); }
-      100% { transform: rotate(8deg); }
-    }
-
-    .greeting {
-      font-size: 2.2rem;
-      font-weight: 500;
-      color: #ffecb3;
-      margin: 15px 0 10px;
-      background: rgba(0,0,0,0.25);
-      border-radius: 40px;
-      padding: 10px 20px;
-      display: inline-block;
-      backdrop-filter: blur(5px);
-    }
-
-    .message {
-      font-size: 1.9rem;
-      line-height: 1.6;
-      color: #ffe0c0;
-      margin: 25px 0;
-      font-weight: 500;
-      text-shadow: 0 0 8px rgba(0,0,0,0.8);
-      background: rgba(80, 40, 70, 0.25);
-      border-radius: 50px;
-      padding: 20px 18px;
-      backdrop-filter: blur(4px);
-      border: 1px dashed rgba(255, 200, 100, 0.6);
-    }
-
-    .santa-note {
+    .subtitle {
       font-size: 2rem;
-      color: #ffb997;
-      font-family: 'Caveat', cursive;
-      margin: 20px 0 5px;
+      color: #fdd5e6;
+      background: rgba(50, 20, 60, 0.5);
+      display: inline-block;
+      padding: 8px 35px;
+      border-radius: 50px;
+      margin-bottom: 35px;
+      letter-spacing: 2px;
+      backdrop-filter: blur(5px);
+      font-weight: 600;
+      border: 1px dashed #ffb6d1;
+    }
+
+    /* КРОССВОРД "ТАНЦУЙ" */
+    .crossword {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      margin: 25px 0 30px;
+    }
+
+    .word-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 25px 35px;
+    }
+
+    .letter-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .big-letter {
+      font-family: 'Marck Script', 'Caveat', cursive;
+      font-size: 5.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ffd966, #ff8c8c, #d08cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 25px #ff80bf);
+      line-height: 1;
+      animation: letterJump 2.8s infinite ease-in-out;
+      cursor: default;
+    }
+
+    /* разная задержка для букв */
+    .letter-block:nth-child(1) .big-letter { animation-delay: 0s; }
+    .letter-block:nth-child(2) .big-letter { animation-delay: 0.2s; }
+    .letter-block:nth-child(3) .big-letter { animation-delay: 0.4s; }
+    .letter-block:nth-child(4) .big-letter { animation-delay: 0.6s; }
+    .letter-block:nth-child(5) .big-letter { animation-delay: 0.8s; }
+    .letter-block:nth-child(6) .big-letter { animation-delay: 1.0s; }
+
+    @keyframes letterJump {
+      0% { transform: translateY(0px) scale(1); }
+      30% { transform: translateY(-18px) scale(1.1); }
+      60% { transform: translateY(0px) scale(0.95); }
+      100% { transform: translateY(0px) scale(1); }
+    }
+
+    .small-word {
+      font-family: 'Neucha', 'Caveat', cursive;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fde2c4;
+      background: rgba(138, 43, 95, 0.5);
+      padding: 6px 18px;
+      border-radius: 35px;
+      backdrop-filter: blur(4px);
+      margin-top: 6px;
+      box-shadow: 0 0 18px #ff99cc55;
+      letter-spacing: 1.5px;
+      border: 1px solid #ffb6d1;
+      animation: wordPulse 2.2s infinite alternate;
+    }
+
+    @keyframes wordPulse {
+      0% { background: rgba(138, 43, 95, 0.4); }
+      100% { background: rgba(170, 70, 120, 0.6); }
+    }
+
+    .angel-message {
+      font-size: 2.2rem;
+      margin: 20px 0 10px;
+      color: #ffdab9;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
+      background: rgba(255,255,245,0.08);
+      border-radius: 40px;
+      padding: 12px 25px;
     }
 
-    .gift-box {
-      font-size: 3.5rem;
-      animation: bounceGift 1s infinite;
-      display: inline-block;
-    }
-
-    @keyframes bounceGift {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-18px); }
-    }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 2rem;
-      color: #cf9fff;
-      font-weight: 700;
-      letter-spacing: 1px;
+    .footer-note {
+      margin-top: 25px;
+      font-size: 2.1rem;
+      color: #eac4ff;
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
-    /* Падающие снежинки / блёстки */
+    /* падающие снежинки/блёстки */
     .snowflake {
       position: fixed;
-      top: -60px;
+      top: -50px;
       color: #fff;
-      font-size: 1.8rem;
-      text-shadow: 0 0 15px cyan, 0 0 30px magenta;
+      font-size: 2rem;
+      text-shadow: 0 0 20px #ff99cc, 0 0 35px #b57bee;
       animation: fall linear infinite;
       z-index: 5;
       pointer-events: none;
@@ -211,127 +245,127 @@
       }
     }
 
-    /* адаптив */
-    @media (max-width: 500px) {
-      .card {
-        padding: 30px 20px;
+    @media (max-width: 550px) {
+      .big-letter {
+        font-size: 3.8rem;
       }
-      h1 {
-        font-size: 3rem;
-      }
-      .message {
+      .small-word {
         font-size: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- звёздный фон создаётся динамически -->
   <div class="stars" id="starsContainer"></div>
-
-  <!-- падающие элементы (снежинки/сердечки) -->
   <div id="snowflakesContainer"></div>
 
   <div class="card">
-    <div class="angel-icon">🪽👼✨</div>
-    <h1>Кристина!</h1>
-    <div class="greeting">
-      🌟 Добрая Санта / Тайный ангел 🌟
-    </div>
-    
-    <div class="message">
-      Пусть этот волшебный миг<br>
-      согреет сердце, как горячий какао!<br>
-      Ты — светлый лучик в нашей игре,<br>
-      и ангел-хранитель уже рядом.<br>
-      <span style="display: inline-block; margin-top: 10px;">⭐ Сияй, мечтай и улыбайся! ⭐</span>
+    <h1>Кристина</h1>
+    <div class="subtitle">🪽 Тайный ангел 🪽</div>
+
+    <!-- Кроссворд: Т А Н Ц У Й -->
+    <div class="crossword">
+      <div class="word-row">
+        <!-- Т -> Тепло -->
+        <div class="letter-block">
+          <span class="big-letter">Т</span>
+          <span class="small-word">Тепло</span>
+        </div>
+        <!-- А -> Ангел -->
+        <div class="letter-block">
+          <span class="big-letter">А</span>
+          <span class="small-word">Ангел</span>
+        </div>
+        <!-- Н -> Нежность -->
+        <div class="letter-block">
+          <span class="big-letter">Н</span>
+          <span class="small-word">Нежность</span>
+        </div>
+      </div>
+      <div class="word-row">
+        <!-- Ц -> Цветы -->
+        <div class="letter-block">
+          <span class="big-letter">Ц</span>
+          <span class="small-word">Цветы</span>
+        </div>
+        <!-- У -> Улыбка -->
+        <div class="letter-block">
+          <span class="big-letter">У</span>
+          <span class="small-word">Улыбка</span>
+        </div>
+        <!-- Й -> Йогурт? нет, лучше Йети (добрый) или Йота (капля счастья). Сделаем Йота радости -->
+        <div class="letter-block">
+          <span class="big-letter">Й</span>
+          <span class="small-word">Йота✨</span>
+        </div>
+      </div>
     </div>
 
-    <div class="santa-note">
-      <span>🎅</span> Тайный друг шепчет: <span>«Ты чудесна!»</span> <span>🤫</span>
+    <div class="angel-message">
+      <span>🎀</span> Танцуй, мечтай, сияй! <span>🎀</span>
     </div>
 
-    <div class="gift-box">
-      🎁✨🎀
-    </div>
-
-    <div class="footer">
-      <span>❄️ С теплом,</span>
-      <span>Твой Ангел ❄️</span>
+    <div class="footer-note">
+      <span>❄️ Твой тайный ангел</span>
+      <span>🌟</span>
     </div>
   </div>
 
   <script>
     (function() {
-      // ---- создаём мерцающие звёзды ----
+      // звёзды
       const starsContainer = document.getElementById('starsContainer');
-      const numberOfStars = 110;
-      for (let i = 0; i < numberOfStars; i++) {
+      for (let i = 0; i < 120; i++) {
         const star = document.createElement('div');
         star.className = 'star';
-        const size = Math.random() * 5 + 2; // 2px до 7px
+        const size = Math.random() * 6 + 2;
         star.style.width = size + 'px';
         star.style.height = size + 'px';
         star.style.left = Math.random() * 100 + '%';
         star.style.top = Math.random() * 100 + '%';
-        // случайная задержка анимации
-        star.style.animationDelay = Math.random() * 4 + 's';
-        star.style.animationDuration = 2 + Math.random() * 5 + 's';
-        // немного разных оттенков
-        const colors = ['#fffde7', '#fff9c4', '#ffe0b2', '#ffccbc', '#e1bee7'];
+        star.style.animationDelay = Math.random() * 5 + 's';
+        star.style.animationDuration = 2.2 + Math.random() * 5 + 's';
+        const colors = ['#fffde7', '#ffe0f0', '#f8d5ff', '#ffccf9', '#d4c5f9'];
         star.style.background = colors[Math.floor(Math.random() * colors.length)];
-        star.style.boxShadow = `0 0 ${Math.random() * 20 + 5}px ${colors[Math.floor(Math.random() * colors.length)]}`;
+        star.style.boxShadow = `0 0 ${Math.random()*22+6}px ${colors[Math.floor(Math.random()*colors.length)]}`;
         starsContainer.appendChild(star);
       }
 
-      // ---- падающие снежинки / блёстки ----
+      // падающие элементы
       const snowflakesContainer = document.getElementById('snowflakesContainer');
-      const emojis = ['❄️', '✨', '🌟', '💫', '🕊️', '🎀', '🔮', '🧚', '☃️', '💖', '⭐', '🪽'];
-      
+      const emojis = ['❄️', '🪽', '✨', '💖', '🌟', '🎀', '🕊️', '💫', '🧚', '🌸', '⭐', '🔮'];
+
       function createSnowflake() {
         const flake = document.createElement('div');
         flake.className = 'snowflake';
-        const emoji = emojis[Math.floor(Math.random() * emojis.length)];
-        flake.innerHTML = emoji;
+        flake.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
         flake.style.left = Math.random() * 100 + '%';
-        flake.style.fontSize = (Math.random() * 25 + 15) + 'px';
-        flake.style.animationDuration = Math.random() * 6 + 6 + 's'; // от 6 до 12 секунд
-        flake.style.opacity = Math.random() * 0.8 + 0.3;
-        flake.style.filter = `drop-shadow(0 0 ${Math.random()*10+5}px gold)`;
+        flake.style.fontSize = (Math.random() * 28 + 18) + 'px';
+        flake.style.animationDuration = Math.random() * 7 + 7 + 's';
+        flake.style.opacity = Math.random() * 0.9 + 0.3;
         snowflakesContainer.appendChild(flake);
-
-        // удаляем после окончания анимации, чтобы не переполнять DOM
         setTimeout(() => {
-          if (flake && flake.parentNode) {
-            flake.remove();
-          }
-        }, 13000);
+          if (flake && flake.parentNode) flake.remove();
+        }, 15000);
       }
 
-      // Создаём снежинки с интервалом
-      setInterval(createSnowflake, 400);
-      // сразу несколько для плотности
-      for (let i = 0; i < 12; i++) {
-        setTimeout(createSnowflake, i * 150);
+      setInterval(createSnowflake, 380);
+      for (let i = 0; i < 14; i++) {
+        setTimeout(createSnowflake, i * 180);
       }
 
-      // дополнительно: лёгкое движение звёзд при движении мыши (по желанию, но оставим минимально)
+      // лёгкий параллакс
       document.addEventListener('mousemove', (e) => {
         const card = document.querySelector('.card');
         if (!card) return;
-        const xAxis = (window.innerWidth / 2 - e.clientX) / 40;
-        const yAxis = (window.innerHeight / 2 - e.clientY) / 40;
-        card.style.transform = `translateY(-8px) rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        const x = (window.innerWidth/2 - e.clientX) / 50;
+        const y = (window.innerHeight/2 - e.clientY) / 50;
+        card.style.transform = `translateY(-6px) rotateY(${x}deg) rotateX(${y}deg)`;
       });
-
-      // возвращаем на место когда мышь уходит
       document.addEventListener('mouseleave', () => {
         const card = document.querySelector('.card');
-        if (card) {
-          card.style.transform = 'translateY(0px) rotateY(0deg) rotateX(0deg)';
-        }
+        if (card) card.style.transform = 'translateY(0px) rotateY(0deg) rotateX(0deg)';
       });
-
     })();
   </script>
 </body>
